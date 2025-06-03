@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 98%; /* #FAFAFA */
+  --foreground: 0 0% 20%; /* #333333 */
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 20%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 20%;
+  --primary: 88 28% 24%; /* #2D5A27 forest green */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --accent: 88 13% 56%; /* #8FBC8F sea green */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --ring: 88 28% 24%;
+  --radius: 0.5rem;
+  
+  /* Custom colors */
+  --forest: 88 28% 24%; /* #2D5A27 */
+  --olive: 69 39% 35%; /* #6B8E23 */
+  --sea-green: 88 13% 56%; /* #8FBC8F */
+  --off-white: 0 0% 98%; /* #FAFAFA */
+  --charcoal: 0 0% 20%; /* #333333 */
+  --medium-gray: 0 0% 40%; /* #666666 */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 88 28% 34%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 88 13% 46%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 88 28% 34%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .forest {
+    color: hsl(var(--forest));
+  }
+  
+  .olive {
+    color: hsl(var(--olive));
+  }
+  
+  .sea-green {
+    color: hsl(var(--sea-green));
+  }
+  
+  .off-white {
+    background-color: hsl(var(--off-white));
+  }
+  
+  .charcoal {
+    color: hsl(var(--charcoal));
+  }
+  
+  .medium-gray {
+    color: hsl(var(--medium-gray));
+  }
+}
