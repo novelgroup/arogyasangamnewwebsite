@@ -1,0 +1,40 @@
+Create a responsive, modern website for a youth-led nonprofit named Arogya Sangam Foundation. The site must adapt seamlessly across desktop, tablet, and mobile screens. Prioritize a minimalist design with dynamic user experiences — such as scroll animations, hover interactions, fade-in effects, and smooth transitions.
+
+Design aesthetics:
+	•	Minimalist layout with soft neutrals and earthy green accents
+	•	Generous white space and clean typography (sans-serif)
+	•	Sticky top navigation bar with logo
+	•	Smooth scroll and responsive breakpoint adjustments
+
+Homepage Requirements:
+	•	Full-width hero section with tagline:
+“Youth-led Health. Rooted in Tradition. Driven by Purpose.”
+	•	Background animation or slow pan (optional but subtle)
+
+Sections to Include (each should be dynamically laid out and fully responsive):
+	1.	Our Vision & Mission
+(Use unedited content below)
+Vision: A future where empowered youth drive sustainable health for all.
+Mission:
+
+	•	Empower youth as health companions through education, leadership, and peer-driven initiatives.
+	•	Preserve traditional knowledge while integrating research-based solutions for emerging health challenges.
+	•	Strengthen financial literacy to drive informed decisions and sustainable healthcare practices.
+	•	Improve healthcare access and equity through advocacy, grassroots programs, and community resilience.
+	•	Build a healthier future by addressing nutrition, mental health, and disease prevention with impactful, scalable solutions.
+
+	2.	Our Programs – Use responsive cards or sliders to highlight programs like:
+Health Education, Financial Literacy, Mental Wellness, Nutrition, Disease Prevention.
+	3.	Theory of Change – Include animated icons or infographics showing the change model.
+Headline: “Youth lead, communities thrive, and health becomes a way of life.”
+	4.	Community Impact – Testimonials or photo grid (auto-scaling with screen size)
+	5.	Get Involved – Responsive contact or volunteer form with CTA
+	6.	Footer – Add social links, quick navigation, and a minimalist contact block
+
+Site should include:
+	•	SEO-friendly layout
+	•	Mobile-first responsiveness
+	•	Interactive but lightweight animations (no heavy JS)
+	•	Fast loading time across all devices
+
+Bonus (optional): Allow future integration of blog or events calendar
