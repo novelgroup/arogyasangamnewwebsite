@@ -114,17 +114,17 @@ export function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-3 text-primary" />
-                <span>info@arogyasangam.org</span>
+                <span>thearogyasangamfoundation@gmail.com</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-3 text-primary" />
-                <span>+91 98765 43210</span>
+                <span>+91 82239 77514</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-4 w-4 mr-3 text-primary mt-1" />
                 <span>
-                  123 Health Street<br />
-                  New Delhi, India 110001
+                  59 B Bhagirath Colony, Dharnaka<br />
+                  Mhow, Indore (M.P), India
                 </span>
               </li>
             </ul>
