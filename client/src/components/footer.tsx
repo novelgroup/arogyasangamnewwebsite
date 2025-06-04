@@ -19,10 +19,11 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <Heart className="text-white h-5 w-5" />
-              </div>
-              <span className="text-xl font-semibold">Arogya Sangam Foundation</span>
+              <img 
+                src="/attached_assets/IMG_3809.PNG" 
+                alt="The Arogya Sangam Foundation"
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               Empowering youth to drive sustainable health initiatives, combining traditional wisdom with modern solutions for stronger, healthier communities.

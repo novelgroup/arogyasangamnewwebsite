@@ -39,10 +39,11 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <Heart className="text-white h-5 w-5" />
-            </div>
-            <span className="text-xl font-semibold text-primary">Arogya Sangam Foundation</span>
+            <img 
+              src="/attached_assets/IMG_3809.PNG" 
+              alt="The Arogya Sangam Foundation"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
