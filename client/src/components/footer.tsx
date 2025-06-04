@@ -20,7 +20,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src="/attached_assets/IMG_3809.PNG" 
+                src="/logo.png" 
                 alt="The Arogya Sangam Foundation"
                 className="h-12 w-auto brightness-0 invert"
               />

@@ -40,7 +40,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
             <img 
-              src="/attached_assets/IMG_3809.PNG" 
+              src="/logo.png"
               alt="The Arogya Sangam Foundation"
               className="h-12 w-auto"
             />
