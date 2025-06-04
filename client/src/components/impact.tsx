@@ -6,10 +6,10 @@ export function Impact() {
   const { ref: sectionRef, isVisible } = useScrollAnimation();
 
   const statistics = [
-    { value: "500+", label: "Youth Trained" },
-    { value: "25", label: "Communities Reached" },
+    { value: "50+", label: "Youth Trained" },
+    { value: "10+", label: "Communities Reached" },
     { value: "1000+", label: "Lives Impacted" },
-    { value: "15", label: "Programs Active" },
+    { value: "5", label: "Programs Active" },
   ];
 
   const testimonials = [
