@@ -29,24 +29,9 @@ export function Footer() {
               Empowering youth to drive sustainable health initiatives, combining traditional wisdom with modern solutions for stronger, healthier communities.
             </p>
             <div className="flex space-x-4">
+              
               <motion.a
-                href="#"
-                className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-300"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Facebook className="h-4 w-4" />
-              </motion.a>
-              <motion.a
-                href="#"
-                className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-300"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Twitter className="h-4 w-4" />
-              </motion.a>
-              <motion.a
-                href="#"
+                href="https://www.instagram.com/arogya_sangam?igsh=b3pxMGd0ZmFmYWwy"
                 className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -54,7 +39,7 @@ export function Footer() {
                 <Instagram className="h-4 w-4" />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/company/the-arogya-sangam-foundation/"
                 className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}

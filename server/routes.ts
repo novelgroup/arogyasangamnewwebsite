@@ -19,6 +19,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Instagram redirection endpoint
+  app.get("/instagram", (_req, res) => {
+    res.redirect("https://www.instagram.com/arogya_sangam?igsh=b3pxMGd0ZmFmYWwy");
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }
