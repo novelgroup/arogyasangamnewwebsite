@@ -1,0 +1,32 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/novel-group-348718/tasf-prod', '.']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/novel-group-348718/tasf-prod']
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'run'
+  - 'deploy'
+  - 'tasf-prod'
+  - '--image'
+  - 'gcr.io/novel-group-348718/tasf-prod'
+  - '--port'
+  - '80'
+  - '--region'
+  - 'us-central1'
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated'
+  - '--service-account'
+  - 'sa-prod-web@novel-group-348718.iam.gserviceaccount.com'
+  - '--max-instances'
+  - '5'
+  - '--timeout'
+  - '60'
+  - '--memory'
+  - '256Mi'
+  
+images:
+- gcr.io/novel-group-348718/tasf-prod
