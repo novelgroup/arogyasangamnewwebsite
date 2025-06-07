@@ -1,0 +1,43 @@
+name: Deploy Dev backend to Cloud Run
+
+on:
+  push:
+    branches:
+      - release/dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v0.4.0
+      with:
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.SA_KEY }}
+        export_default_credentials: true
+
+    - name: Authenticate with Google Cloud for Docker
+      run: gcloud auth configure-docker
+
+    - name: Build and push Docker image
+      run: |
+        echo "Building and pushing Docker image..."
+        docker buildx create --use
+        docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/arogyasangam .
+        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/arogyasangam
+
+    - name: Deploy to Cloud Run
+      run: |
+        gcloud run deploy arogyasangam \
+          --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/arogyasangam \
+          --platform managed \
+          --region us-central1 \
+          --allow-unauthenticated \
+          --service-account 661447696717-compute@developer.gserviceaccount.com \
+          --max-instances 2 \
+          --timeout 60 \
+          --memory 512Mi
