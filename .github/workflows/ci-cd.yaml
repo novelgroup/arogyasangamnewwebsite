@@ -3,7 +3,7 @@ name: Deploy Dev backend to Cloud Run
 on:
   push:
     branches:
-      - release/dev
+      - main
 
 jobs:
   deploy:
